@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 187, 187);
+}
+
+.fuente-clara {
+    color: bisque;
+}
+.fuente-oscura {
+    color: #22211f;
+}
+.fuente-acento {
+    color: cornflowerblue;
+}
+nav ul li {
+    font-size: 15px;
+  line-height: 30px;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #FFA07A;
+    width: 100%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+header nav {
+    height: 80px;
+  float: right;
+}
+nav ul.menu {
+    float: right;
+}
+nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul.menu li a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+  }
+header a i {
+    color: #8A2BE2;
+    font-size: 3em;
+    padding: 0.5em;
+}
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+}
+header nav ul li a {
+    color: white;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(186, 5, 5);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.Seccion-2 img {
+    width: 100%;
+    padding: 0em 0em 0em 0em;
+}
+.Acerca-imagen img {
+    width: 500px;
+    border-radius: 50% 20% / 10% 40%;
+}
+.Seccion-1 {
+    display: flex;
+    background-color: #D2B48C;
+    justify-content:center;
+    align-items: center;
+    padding: 5em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
+footer {
+    background-color: grey;
+    width: 100%;
+    padding: 2em;
+}
+.contactarse {
+    padding: 0.5em;
+    color: darkslateblue;
+}
+footer nav p {
+    color: darkblue;
+}
+.WhatsApp a i {
+    display: flex;
+    justify-content: right;
+}
+.WhatsApp i {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 3em;
+    color: chartreuse;
+}
+.creaciones {
+    border: 3px solid black;
+}
+.trabajos {
+    border: 3px solid black;
+}
+.hobbies {
+    border: 3px solid black;
+}
+.missaberes {
+    border: 3px solid black;
+}
+
+@media (max-width:768px) {
+    header {
+        background-color: black;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    .navbar ul.menu li a:hover {
+        color: red;
+    }
+
+   /* ACTIVE */
+   .navbar.active {
+    height: 100vh;
+   }
+   .navbar.active ul.menu {
+    opacity: 1;
+   }
+}
+
+
+
+
